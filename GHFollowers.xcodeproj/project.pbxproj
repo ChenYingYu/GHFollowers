@@ -20,6 +20,7 @@
 		0A1F756E257FA3B30056F174 /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F756D257FA3B30056F174 /* GFBodyLabel.swift */; };
 		0A1F7571257FA4400056F174 /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F7570257FA4400056F174 /* GFAlertVC.swift */; };
 		0A1F7574257FAF430056F174 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F7573257FAF430056F174 /* UIViewController+Ext.swift */; };
+		0A1F75812580EB5B0056F174 /* GFAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F75802580EB5B0056F174 /* GFAlertContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		0A1F756D257FA3B30056F174 /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
 		0A1F7570257FA4400056F174 /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
 		0A1F7573257FAF430056F174 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		0A1F75802580EB5B0056F174 /* GFAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				0A1F7570257FA4400056F174 /* GFAlertVC.swift */,
+				0A1F75802580EB5B0056F174 /* GFAlertContainerView.swift */,
 				0A1F7561257C83300056F174 /* GFButton.swift */,
 				0A1F7564257C85A40056F174 /* GFTextField.swift */,
 				0A1F756A257FA1340056F174 /* GFTitleLabel.swift */,
@@ -189,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1F75812580EB5B0056F174 /* GFAlertContainerView.swift in Sources */,
 				0A1F7565257C85A40056F174 /* GFTextField.swift in Sources */,
 				0A1F755D257C78B60056F174 /* FavoritesListVC.swift in Sources */,
 				0A1F7562257C83300056F174 /* GFButton.swift in Sources */,
