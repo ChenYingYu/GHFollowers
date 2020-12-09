@@ -70,22 +70,54 @@
 		0A1F7532257B84DE0056F174 /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
-				0A1F7561257C83300056F174 /* GFButton.swift */,
-				0A1F7564257C85A40056F174 /* GFTextField.swift */,
-				0A1F7533257B84DE0056F174 /* AppDelegate.swift */,
-				0A1F7535257B84DE0056F174 /* SceneDelegate.swift */,
-				0A1F755C257C78B60056F174 /* FavoritesListVC.swift */,
-				0A1F7559257C785A0056F174 /* SearchVC.swift */,
-				0A1F756A257FA1340056F174 /* GFTitleLabel.swift */,
-				0A1F756D257FA3B30056F174 /* GFBodyLabel.swift */,
-				0A1F7570257FA4400056F174 /* GFAlertVC.swift */,
-				0A1F7573257FAF430056F174 /* UIViewController+Ext.swift */,
-				0A1F7567257F9B570056F174 /* FollowerListVC.swift */,
-				0A1F753C257B84E50056F174 /* Assets.xcassets */,
-				0A1F753E257B84E50056F174 /* LaunchScreen.storyboard */,
-				0A1F7541257B84E50056F174 /* Info.plist */,
+				0A1F757B2580E8C00056F174 /* Extensions */,
+				0A1F75772580E89E0056F174 /* Custom Views */,
+				0A1F75762580E87C0056F174 /* Screens */,
+				0A1F757C2580E90A0056F174 /* Support */,
 			);
 			path = GHFollowers;
+			sourceTree = "<group>";
+		};
+		0A1F75762580E87C0056F174 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0A1F7559257C785A0056F174 /* SearchVC.swift */,
+				0A1F7567257F9B570056F174 /* FollowerListVC.swift */,
+				0A1F755C257C78B60056F174 /* FavoritesListVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0A1F75772580E89E0056F174 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A1F7570257FA4400056F174 /* GFAlertVC.swift */,
+				0A1F7561257C83300056F174 /* GFButton.swift */,
+				0A1F7564257C85A40056F174 /* GFTextField.swift */,
+				0A1F756A257FA1340056F174 /* GFTitleLabel.swift */,
+				0A1F756D257FA3B30056F174 /* GFBodyLabel.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		0A1F757B2580E8C00056F174 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A1F7573257FAF430056F174 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0A1F757C2580E90A0056F174 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				0A1F7541257B84E50056F174 /* Info.plist */,
+				0A1F7533257B84DE0056F174 /* AppDelegate.swift */,
+				0A1F7535257B84DE0056F174 /* SceneDelegate.swift */,
+				0A1F753C257B84E50056F174 /* Assets.xcassets */,
+				0A1F753E257B84E50056F174 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9VPGGN82CW;
-				INFOPLIST_FILE = GHFollowers/Info.plist;
+				INFOPLIST_FILE = GHFollowers/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -328,7 +360,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9VPGGN82CW;
-				INFOPLIST_FILE = GHFollowers/Info.plist;
+				INFOPLIST_FILE = GHFollowers/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
