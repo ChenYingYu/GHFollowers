@@ -110,14 +110,13 @@
 		0A1F75772580E89E0056F174 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				0AF8C5F525863019005762A1 /* Labels */,
+				0AF8C5F425863011005762A1 /* ViewControllers */,
+				0AF8C5F325863001005762A1 /* ImageViews */,
+				0AF8C5F225862FF8005762A1 /* TextFields */,
+				0AF8C5F125862FF0005762A1 /* Buttons */,
+				0AF8C5F025862FE9005762A1 /* Views */,
 				0A1F7596258390490056F174 /* Cells */,
-				0A1F7570257FA4400056F174 /* GFAlertVC.swift */,
-				0A1F75802580EB5B0056F174 /* GFAlertContainerView.swift */,
-				0A1F7561257C83300056F174 /* GFButton.swift */,
-				0A1F7564257C85A40056F174 /* GFTextField.swift */,
-				0A1F756A257FA1340056F174 /* GFTitleLabel.swift */,
-				0A1F756D257FA3B30056F174 /* GFBodyLabel.swift */,
-				0A1F759A258391AE0056F174 /* GFAvatarImageView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -174,6 +173,55 @@
 				0A1F7597258390690056F174 /* FollowerCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		0AF8C5F025862FE9005762A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A1F75802580EB5B0056F174 /* GFAlertContainerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0AF8C5F125862FF0005762A1 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				0A1F7561257C83300056F174 /* GFButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		0AF8C5F225862FF8005762A1 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				0A1F7564257C85A40056F174 /* GFTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		0AF8C5F325863001005762A1 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				0A1F759A258391AE0056F174 /* GFAvatarImageView.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		0AF8C5F425863011005762A1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A1F7570257FA4400056F174 /* GFAlertVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0AF8C5F525863019005762A1 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				0A1F756A257FA1340056F174 /* GFTitleLabel.swift */,
+				0A1F756D257FA3B30056F174 /* GFBodyLabel.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
