@@ -33,6 +33,7 @@
 		0AF8C624258788E1005762A1 /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8C623258788E1005762A1 /* GFSecondaryTitleLabel.swift */; };
 		0AF8C6272587907D005762A1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8C6262587907D005762A1 /* Constants.swift */; };
 		0AF8C62F25879446005762A1 /* GFUserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8C62E25879446005762A1 /* GFUserInfoHeaderVC.swift */; };
+		0AF8C6332588280E005762A1 /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8C6322588280E005762A1 /* GFItemInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		0AF8C623258788E1005762A1 /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		0AF8C6262587907D005762A1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0AF8C62E25879446005762A1 /* GFUserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderVC.swift; sourceTree = "<group>"; };
+		0AF8C6322588280E005762A1 /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 			children = (
 				0A1F75802580EB5B0056F174 /* GFAlertContainerView.swift */,
 				0AF8C5F6258630DB005762A1 /* GFEmptyStateView.swift */,
+				0AF8C6322588280E005762A1 /* GFItemInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				0AF8C5ED2584B735005762A1 /* UIHelper.swift in Sources */,
 				0A1F758E258100020056F174 /* NetworkManager.swift in Sources */,
 				0A1F7534257B84DE0056F174 /* AppDelegate.swift in Sources */,
+				0AF8C6332588280E005762A1 /* GFItemInfoView.swift in Sources */,
 				0A1F7536257B84DE0056F174 /* SceneDelegate.swift in Sources */,
 				0AF8C6272587907D005762A1 /* Constants.swift in Sources */,
 			);
