@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol UserInfoVCDelegate: class {
+    func didRequestFollowers(for username: String)
+}
+
 class UserInfoVC: UIViewController {
 
     let headerView = UIView()
@@ -16,6 +20,7 @@ class UserInfoVC: UIViewController {
     var itemViews = [UIView]()
 
     var username: String!
+    weak var delegate: UserInfoVCDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +52,7 @@ class UserInfoVC: UIViewController {
     func configureUIElements(with user: User) {
         self.add(childVC: GFUserInfoHeaderVC(user: user), to: self.headerView)
         self.add(childVC: GFRepoItemVC(user: user, delegate: self), to: self.itemViewOne)
-        self.add(childVC: GFFollowerItemVC(user: user), to: self.itemViewTwo)
+        self.add(childVC: GFFollowerItemVC(user: user, delegate: self), to: self.itemViewTwo)
         self.dateLabel.text = "GitHub since \(user.createdAt.convertToDisplayFormat())"
     }
 
@@ -101,5 +106,18 @@ extension UserInfoVC: GFRepoItemVCDelegate {
             return
         }
         presentSafariVC(with: url)
+    }
+}
+
+extension UserInfoVC: GFFollowerItemVCDelegate {
+    func didTapGetFollowers(for user: User) {
+
+        guard user.followers != 0 else {
+            presentGFAlertOnMainThread(title: "No followers", message: "This user has no followers. What a shame 😞.", buttonTitle: "So sad")
+            return
+        }
+
+        delegate?.didRequestFollowers(for: user.login)
+        dismissVC()
     }
 }
