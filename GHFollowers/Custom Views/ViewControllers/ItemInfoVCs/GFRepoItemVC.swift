@@ -33,10 +33,9 @@ class GFRepoItemVC: GFItemInfoVC {
         itemInfoViewOne.set(itemInfoType: .repos, withCount: user.publicRepos)
         itemInfoViewTwo.set(itemInfoType: .gists, withCount: user.publicGists)
         actionButton.set(backgroundColor: .systemPurple, title: "Github Profile")
-        actionButton.addTarget(self, action: #selector(didTapGitHubProfile), for: .touchUpInside)
     }
 
-    @objc func didTapGitHubProfile() {
+    override func actionButtonTapped() {
         delegate?.didTapGitHubProfile(of: user)
     }
 }
