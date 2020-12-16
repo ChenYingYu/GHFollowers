@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SafariServices
 
 class UserInfoVC: UIViewController {
 
@@ -101,8 +100,6 @@ extension UserInfoVC: GFRepoItemVCDelegate {
             presentGFAlertOnMainThread(title: "Invalid URL", message: "The url attatched to this user is invalid.", buttonTitle: "Ok")
             return
         }
-        let safariVC = SFSafariViewController(url: url)
-        safariVC.preferredControlTintColor = .systemGreen
-        present(safariVC, animated: true)
+        presentSafariVC(with: url)
     }
 }
