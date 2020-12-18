@@ -42,6 +42,7 @@
 		0AF8C65B258B8E9B005762A1 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8C65A258B8E9B005762A1 /* PersistenceManager.swift */; };
 		0AF8C65F258B9BE6005762A1 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8C65E258B9BE6005762A1 /* FavoriteCell.swift */; };
 		0AF8C663258C2214005762A1 /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8C662258C2214005762A1 /* GFTabBarController.swift */; };
+		0AF8C667258CDC87005762A1 /* GFDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8C666258CDC87005762A1 /* GFDataLoadingVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		0AF8C65A258B8E9B005762A1 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		0AF8C65E258B9BE6005762A1 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		0AF8C662258C2214005762A1 /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
+		0AF8C666258CDC87005762A1 /* GFDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDataLoadingVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +252,7 @@
 				0AF8C64425883270005762A1 /* ItemInfoVCs */,
 				0A1F7570257FA4400056F174 /* GFAlertVC.swift */,
 				0AF8C62E25879446005762A1 /* GFUserInfoHeaderVC.swift */,
+				0AF8C666258CDC87005762A1 /* GFDataLoadingVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				0A1F7562257C83300056F174 /* GFButton.swift in Sources */,
 				0A1F7574257FAF430056F174 /* UIViewController+Ext.swift in Sources */,
 				0AF8C62F25879446005762A1 /* GFUserInfoHeaderVC.swift in Sources */,
+				0AF8C667258CDC87005762A1 /* GFDataLoadingVC.swift in Sources */,
 				0AF8C5F7258630DB005762A1 /* GFEmptyStateView.swift in Sources */,
 				0A1F755A257C785A0056F174 /* SearchVC.swift in Sources */,
 				0AF8C624258788E1005762A1 /* GFSecondaryTitleLabel.swift in Sources */,
