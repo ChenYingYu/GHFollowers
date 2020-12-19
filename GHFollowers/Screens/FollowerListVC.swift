@@ -91,7 +91,7 @@ class FollowerListVC: GFDataLoadingVC {
                     return
                 }
 
-                self.updateData(on: followers)
+                self.updateData(on: self.followers)
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Bad Stuff Happend", message: error.rawValue, buttonTitle: "Ok")
             }
