@@ -43,6 +43,7 @@
 		0AF8C65F258B9BE6005762A1 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8C65E258B9BE6005762A1 /* FavoriteCell.swift */; };
 		0AF8C663258C2214005762A1 /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8C662258C2214005762A1 /* GFTabBarController.swift */; };
 		0AF8C667258CDC87005762A1 /* GFDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8C666258CDC87005762A1 /* GFDataLoadingVC.swift */; };
+		0AF8C691258DDD36005762A1 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8C690258DDD36005762A1 /* UIView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		0AF8C65E258B9BE6005762A1 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		0AF8C662258C2214005762A1 /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
 		0AF8C666258CDC87005762A1 /* GFDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDataLoadingVC.swift; sourceTree = "<group>"; };
+		0AF8C690258DDD36005762A1 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				0A1F7573257FAF430056F174 /* UIViewController+Ext.swift */,
+				0AF8C690258DDD36005762A1 /* UIView+Ext.swift */,
 				0AF8C65325898147005762A1 /* Date+Ext.swift */,
 				0AF8C6562589816D005762A1 /* String+Ext.swift */,
 			);
@@ -386,6 +389,7 @@
 				0A1F7534257B84DE0056F174 /* AppDelegate.swift in Sources */,
 				0AF8C6332588280E005762A1 /* GFItemInfoView.swift in Sources */,
 				0A1F7536257B84DE0056F174 /* SceneDelegate.swift in Sources */,
+				0AF8C691258DDD36005762A1 /* UIView+Ext.swift in Sources */,
 				0AF8C6272587907D005762A1 /* Constants.swift in Sources */,
 				0AF8C663258C2214005762A1 /* GFTabBarController.swift in Sources */,
 			);
