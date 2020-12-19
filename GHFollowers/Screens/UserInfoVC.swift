@@ -59,6 +59,7 @@ class UserInfoVC: UIViewController {
                 DispatchQueue.main.async {
                     self.configureUIElements(with: user)
                 }
+
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
             }
@@ -116,6 +117,7 @@ class UserInfoVC: UIViewController {
 }
 
 extension UserInfoVC: GFRepoItemVCDelegate {
+    
     func didTapGitHubProfile(of user: User) {
         guard let url = URL(string: user.htmlUrl) else {
             presentGFAlertOnMainThread(title: "Invalid URL", message: "The url attatched to this user is invalid.", buttonTitle: "Ok")
@@ -126,6 +128,7 @@ extension UserInfoVC: GFRepoItemVCDelegate {
 }
 
 extension UserInfoVC: GFFollowerItemVCDelegate {
+
     func didTapGetFollowers(for user: User) {
 
         guard user.followers != 0 else {

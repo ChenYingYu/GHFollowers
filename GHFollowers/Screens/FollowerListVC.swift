@@ -24,6 +24,7 @@ class FollowerListVC: GFDataLoadingVC {
     var collectionView: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<Section, Follower>!
 
+
     init(username: String) {
         super.init(nibName: nil, bundle: nil)
         self.username = username
@@ -48,7 +49,6 @@ class FollowerListVC: GFDataLoadingVC {
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
-    // MARK: - Helper
     func configureViewController() {
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -80,6 +80,7 @@ class FollowerListVC: GFDataLoadingVC {
         NetworkManager.shared.getFollowers(for: username, page: page) { [weak self] result in
             guard let self = self else { return }
             self.dismissLoadingView()
+
             switch result {
             case .success(let followers):
                 self.updateUI(with: followers)
@@ -194,6 +195,7 @@ extension FollowerListVC: UserInfoVCDelegate {
         self.username = username
         title = username
         page = 1
+
         followers.removeAll()
         filterFollowers.removeAll()
         collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: true)

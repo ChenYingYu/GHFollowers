@@ -31,7 +31,6 @@ class SearchVC: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
-    // MARK: - Helper
     private func createDismissKeyBoardTapGesture() {
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)

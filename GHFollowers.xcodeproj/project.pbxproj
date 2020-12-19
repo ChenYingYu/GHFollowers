@@ -136,8 +136,8 @@
 			children = (
 				0A1F7559257C785A0056F174 /* SearchVC.swift */,
 				0A1F7567257F9B570056F174 /* FollowerListVC.swift */,
-				0AF8C61925877D19005762A1 /* UserInfoVC.swift */,
 				0A1F755C257C78B60056F174 /* FavoritesListVC.swift */,
+				0AF8C61925877D19005762A1 /* UserInfoVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -161,9 +161,9 @@
 			isa = PBXGroup;
 			children = (
 				0A1F7573257FAF430056F174 /* UIViewController+Ext.swift */,
-				0A3A8221258DF1D800951EA1 /* UITableView+Ext.swift */,
-				0AF8C690258DDD36005762A1 /* UIView+Ext.swift */,
 				0AF8C65325898147005762A1 /* Date+Ext.swift */,
+				0AF8C690258DDD36005762A1 /* UIView+Ext.swift */,
+				0A3A8221258DF1D800951EA1 /* UITableView+Ext.swift */,
 				0AF8C6562589816D005762A1 /* String+Ext.swift */,
 			);
 			path = Extensions;
@@ -221,9 +221,9 @@
 		0AF8C5F025862FE9005762A1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0A1F75802580EB5B0056F174 /* GFAlertContainerView.swift */,
 				0AF8C5F6258630DB005762A1 /* GFEmptyStateView.swift */,
 				0AF8C6322588280E005762A1 /* GFItemInfoView.swift */,
+				0A1F75802580EB5B0056F174 /* GFAlertContainerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

@@ -18,6 +18,7 @@ class GFUserInfoHeaderVC: UIViewController {
 
     var user: User!
 
+
     init(user: User) {
         super.init(nibName: nil, bundle: nil)
         self.user = user
@@ -29,7 +30,7 @@ class GFUserInfoHeaderVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        addSubviews()
+        view.addSubviews(avatarImageView, usernameLabel, nameLabel, locationImageView, locationLabel, bioLabel)
         layoutUI()
         configureUIElements()
     }
@@ -44,10 +45,6 @@ class GFUserInfoHeaderVC: UIViewController {
 
         locationImageView.image = SFSymbols.location
         locationImageView.tintColor = .secondaryLabel
-    }
-
-    func addSubviews() {
-        view.addSubviews(avatarImageView, usernameLabel, nameLabel, locationImageView, locationLabel, bioLabel)
     }
 
     func layoutUI() {
