@@ -1,4 +1,7 @@
 # GFFollowers
+<img src="https://github.com/ChenYingYu/reflections/blob/master/ScreenShot/GHFollowers-1.png" width="220" height="448"> <img src="https://github.com/ChenYingYu/reflections/blob/master/ScreenShot/GHFollowers-2.png" width="220" height="448"> <img src="https://github.com/ChenYingYu/reflections/blob/master/ScreenShot/GHFollowers-3.png" width="220" height="448"> <img src="https://github.com/ChenYingYu/reflections/blob/master/ScreenShot/GHFollowers-4.png" width="220" height="448"> 
+
+
 ## App Premise:
 
 - The user can enter a GitHub username and retrieve a list of that username's followers.
