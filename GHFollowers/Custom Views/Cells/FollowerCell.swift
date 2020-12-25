@@ -29,7 +29,7 @@ class FollowerCell: UICollectionViewCell {
     }
 
     private func configure() {
-        addSubviews(avatarImageView, usernameLabel)
+        contentView.addSubviews(avatarImageView, usernameLabel)
         let padding: CGFloat = 8
 
         NSLayoutConstraint.activate([
@@ -40,8 +40,7 @@ class FollowerCell: UICollectionViewCell {
 
             usernameLabel.topAnchor.constraint(equalTo: avatarImageView.bottomAnchor, constant: 12),
             usernameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
-            usernameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
-            usernameLabel.heightAnchor.constraint(equalToConstant: 20)
+            usernameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding)
         ])
     }
 }
