@@ -110,6 +110,7 @@ class FollowerListVC: GFDataLoadingVC {
         dataSource = UICollectionViewDiffableDataSource<Section, Follower>(collectionView: collectionView, cellProvider: { (collectionView, indexPath, follower) -> UICollectionViewCell? in
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FollowerCell.reuseID, for: indexPath) as! FollowerCell
             cell.set(follower: follower)
+            cell.avatarImageView.image = cell.avatarImageView.placeholderImage
             return cell
         })
     }
