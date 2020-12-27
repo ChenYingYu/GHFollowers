@@ -192,6 +192,7 @@ extension FollowerListVC: UserInfoVCDelegate {
         self.username = username
         title = username
         page = 1
+        hasMoreFollowers = true
 
         followers.removeAll()
         filterFollowers.removeAll()
