@@ -18,7 +18,6 @@ class FollowerListVC: GFDataLoadingVC {
     var filterFollowers = [Follower]()
     var page = 1
     var hasMoreFollowers = true
-    var isSearching = false
     var isLoadingMoreFollowers = false
 
     var collectionView: UICollectionView!
@@ -166,8 +165,7 @@ extension FollowerListVC: UICollectionViewDelegate {
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let activeArray = isSearching ? filterFollowers : followers
-        let follower = activeArray[indexPath.item]
+        guard let follower = dataSource.itemIdentifier(for: indexPath) else { return }
 
         let destVC = UserInfoVC()
         destVC.username = follower.login
@@ -182,10 +180,8 @@ extension FollowerListVC: UISearchResultsUpdating {
         guard let filter = searchController.searchBar.text, !filter.isEmpty else {
             filterFollowers.removeAll()
             updateData(on: followers)
-            isSearching = false
             return
         }
-        isSearching = true
         filterFollowers = followers.filter { $0.login.lowercased().contains(filter.lowercased()) }
         updateData(on: filterFollowers)
     }
